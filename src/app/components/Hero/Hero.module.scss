@@ -1,0 +1,71 @@
+@import "../../styles/variables.module.scss";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 128px 35px 35px;
+  width: 100%;
+  height: fit-content;
+  min-height: 100dvh;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%, #D4DEE4 70%) ,url("/MasajeFondo.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #D4DEE4;
+  justify-content: end;
+}
+
+.title_section {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 4px;
+
+  h1 {
+    font-size:4.5rem;
+    font-weight: $font-medium;
+    color: $dark-blue;
+    line-height: 1;
+    text-align: right;
+    max-width: 335px;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: $font-medium;
+    color: $dark-blue;
+    line-height: 1;
+    text-align: right;
+    max-width: 210px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-weight: $font-regular;
+    color: $light-blue;
+    text-align: right;
+  }
+}
+
+.slogan {
+  font-size: 1.375rem;
+  font-weight: $font-regular;
+  color: $gray;
+  text-align: center;
+  max-width: 280px;
+  align-self: center;
+}
+
+.contacto_button {
+  width: fit-content;
+  padding: 16px 40px;
+  font-size: 1.375rem;
+  font-weight: $font-semibold;
+  color: white;
+  background: linear-gradient(to right, $dark-blue, $turquoise);
+  align-self: center;
+  border-radius: 8px;
+}
+
+
+

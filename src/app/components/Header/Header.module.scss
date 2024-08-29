@@ -1,0 +1,101 @@
+@import "../../styles/variables.module.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  position: fixed;
+  width: 100%;
+  background: rgba(#fff, 0.25);
+
+  @media only screen and (min-width: 800px) {
+    padding: 12px 32px;
+  }
+}
+
+.logo_wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex:1;
+
+  .logo_text {
+    display: none;
+  }
+
+  
+
+  @media only screen and (min-width: 1200px) {
+    .logo_text {
+      display: unset;
+      font-size: 32px;
+      font-weight: $font-regular;
+      color: $dark-blue;
+      line-height: 1;
+      margin-top: 6px;
+    }
+  }
+}
+
+.navigation {
+
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  flex: 0;
+
+  a {
+    font-size: 22px;
+    font-weight: $font-medium;
+    color: $dark-blue;
+  }
+
+  a {
+    display: none;
+  }
+
+  .services_link {
+    display: unset;
+    font-size: 22px;
+    font-weight: $font-medium;
+    color: $dark-blue;
+  }
+
+  @media only screen and (min-width: 800px) {
+    a {
+      display: unset;
+      font-size: 22px;
+      font-weight: $font-medium;
+      color: $dark-blue;
+    }
+  }
+}
+
+.links_group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex: 1;
+  justify-content: right;
+
+  a {
+    display: none;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    a {
+      display: grid;
+    }
+
+    .language_switch {
+      margin-right: 6px;
+    }
+  }
+
+}
+
+
+
+
+
