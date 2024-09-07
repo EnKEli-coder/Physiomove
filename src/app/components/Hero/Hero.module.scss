@@ -1,18 +1,26 @@
 @import "../../styles/variables.module.scss";
 
 .hero {
+  width: 100%;
+  height: fit-content;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   gap: 45px;
   padding: 128px 35px 35px;
-  width: 100%;
-  height: fit-content;
-  min-height: 100dvh;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%, #D4DEE4 70%) ,url("/MasajeFondo.png");
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%, #D4DEE4 70%) , url("/MasajeFondo.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #D4DEE4;
   justify-content: end;
+
+  @media only screen and (min-width: 800px){
+    padding: 122px;
+    background-image: url("/MasajeLarge.png");
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+  }
 }
 
 .title_section {
@@ -21,7 +29,7 @@
   align-items: end;
   gap: 4px;
 
-  h1 {
+  .title_one {
     font-size:4.5rem;
     font-weight: $font-medium;
     color: $dark-blue;
@@ -30,7 +38,7 @@
     max-width: 335px;
   }
 
-  h2 {
+  .title_two {
     font-size: 2.25rem;
     font-weight: $font-medium;
     color: $dark-blue;
@@ -39,11 +47,60 @@
     max-width: 210px;
   }
 
+  .title_full {
+    display: none;
+  }
+
   p {
     font-size: 1.25rem;
     font-weight: $font-regular;
     color: $light-blue;
     text-align: right;
+    line-height: 1;
+  }
+
+  @media only screen and (min-width: 800px) {
+    align-items: start;
+
+    .title_one, .title_two {
+      display: none;
+    }
+
+    .title_full {
+      display: unset;
+      font-size: 4rem;
+      font-weight: $font-medium;
+      color: $dark-blue;
+      line-height: 1;
+      text-align: left;
+    }
+
+    p {
+      font-size: 2.5rem;
+      text-align: left;
+    }
+  }
+
+  @media only screen and (min-width: 1690px) {
+    align-items: start;
+
+    .title_one, .title_two {
+      display: none;
+    }
+
+    .title_full {
+      display: unset;
+      font-size: 6.25rem;
+      font-weight: $font-medium;
+      color: $dark-blue;
+      line-height: 1;
+      text-align: left;
+    }
+
+    p {
+      font-size: 4rem;
+      text-align: left;
+    }
   }
 }
 
@@ -54,6 +111,17 @@
   text-align: center;
   max-width: 280px;
   align-self: center;
+
+  @media only screen and (min-width: 800px) {
+    font-size: 1.5rem;
+    text-align: left;
+    max-width: unset;
+    align-self: flex-start;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 2rem;
+  }
 }
 
 .contacto_button {
@@ -65,6 +133,11 @@
   background: linear-gradient(to right, $dark-blue, $turquoise);
   align-self: center;
   border-radius: 8px;
+
+  @media only screen and (min-width: 800px) {
+    margin-top: 90px;
+    align-self: flex-start;
+  }
 }
 
 

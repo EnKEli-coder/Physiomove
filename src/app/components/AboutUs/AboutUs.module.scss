@@ -1,0 +1,156 @@
+@import "../../styles/variables.module.scss";
+
+.about_us {
+  width: 100%;
+  height: fit-content;
+  min-height: 100dvh;
+  background-color: #effbff;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 720px;
+    height: 520px;
+    background-color: #DCF5FF; 
+    border-radius: 50%; 
+    top: -262PX; 
+    left: calc(90% - 720px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 410px;
+    height: 220px;
+    background-color: #DCF5FF; 
+    border-radius: 50%; 
+    bottom: -110px; 
+    right: -60px;
+  }
+
+  @media only screen and (min-width: 800px) {
+    &::before {
+      width: 1420px;
+      height: 880px;
+      top: -500PX; 
+      left: calc(90% - 1420px);
+      // left: -640px;  
+    }
+
+    &::after {
+      width: 1038px;
+      height: 556px;
+      bottom: -282px; 
+      right: calc(80% - 1038px);
+    }
+  }
+
+
+  @media only screen and (min-width: 1200px) {
+    &::before {
+      top: -399PX; 
+      left: calc(55% - 1420px);
+      // left: -396px;  
+    }
+
+    &::after {
+      width: 1038px;
+      height: 556px;
+      bottom: -278px; 
+      right: -161px;
+    }
+  }
+}
+
+.content_wrapper {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  min-height: inherit;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 121px 35px 35px;
+}
+
+.circle_container {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.info_container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title_wrapper {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .name {
+    display: none;
+  }
+
+  .title_one {
+    font-size: 3.5rem;
+    font-weight: $font-medium;
+    color: $dark-blue;
+    line-height: 1;
+  }
+
+  .title_two {
+    font-size: 1.75rem;
+    font-weight: $font-medium;
+    color: $dark-blue;
+    line-height: 1;
+  }
+}
+
+.name_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+
+  p {
+    font-size: 1.25rem;
+    font-weight: $font-light;
+    color: #0A6E8A;
+    line-height: 1;
+  }
+}
+
+.description_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+
+  p {
+    font-size: 1.25rem;
+    font-weight: $font-regular;
+    color: $gray;
+    line-height: 1;
+  }
+}
+
+
+.name_absolute {
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  font-size: 1.25rem;
+  font-weight: $font-regular;
+  color: $light-blue;
+  line-height: 1;
+}
+

@@ -10,14 +10,14 @@ import LanguageIcon from "../svg/LanguageIcon";
 const Header = () => {
   return (
     <header className={style.header}>
-      <div className={style.logo_wrapper}>
+      <Link className={style.logo_wrapper} href='#hero-section' scroll>
         <PhysiomoveIcon/>
         <p className={`${style.logo_text} ${anek_Devanagari.className}` }>Pshysiomove.</p>
-      </div>
+      </Link>
       <nav className={style.navigation}>
-        <Link href="#services_section" className={style.services_link}>SERVICIOS</Link>
-        <Link href="#aboutus_section">CONOCENOS</Link>
-        <Link href="#contact_section">CONTACTO</Link>
+        <Link href="#services-section" className={style.services_link} scroll>SERVICIOS</Link>
+        <Link href="#aboutus-section" scroll>CONOCENOS</Link>
+        <Link href="#contact-section" scroll>CONTACTO</Link>
       </nav>
       <div className={style.links_group}>
         <button type="button" className={style.language_switch}>
