@@ -2,7 +2,7 @@ import { SVGIconProps } from "./svg.types";
 
 const LanguageIcon = ({
   width = "40px",
-  height = "40x",
+  height = "40px",
   color = "black",
   ...otheProps
 }: SVGIconProps) => {
@@ -15,7 +15,7 @@ const LanguageIcon = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_289_225)">
+      <g clipPath="url(#clip0_289_225)">
       <path d="M6.66669 8.33337H18.3334" stroke="#0987BF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path d="M15 5V8.33333C15 15.6967 11.2684 21.6667 6.66669 21.6667" stroke="#0987BF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path d="M8.33331 15C8.33331 18.5733 13.2533 21.5133 19.5 21.6667" stroke="#0987BF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>

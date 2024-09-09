@@ -2,7 +2,7 @@ import { SVGIconProps } from "./svg.types";
 
 const FacebookIcon = ({
   width = "44px",
-  height = "44x",
+  height = "44px",
   color = "black",
   ...otheProps
 }: SVGIconProps) => {
