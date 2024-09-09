@@ -1,6 +1,7 @@
 @import "../../styles/variables.module.scss";
 
 .hero {
+  position: relative;
   width: 100%;
   height: fit-content;
   min-height: 100dvh;
@@ -8,18 +9,30 @@
   flex-direction: column;
   gap: 45px;
   padding: 128px 35px 35px;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%, #D4DEE4 70%) , url("/MasajeFondo.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-color: #D4DEE4;
   justify-content: end;
 
   @media only screen and (min-width: 800px){
     padding: 122px;
-    background-image: url("/MasajeLarge.png");
+    background-image: url("/MasajeLarge.webp");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
     justify-content: center;
+    filter: none;
+  }
+}
+
+.image_container {
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%, #D4DEE4 70%) , url("/MasajeFondo.webp");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #D4DEE4;
+  inset: 0;
+  filter: blur(2px);
+
+  @media only screen and (min-width: 800px){
+    display: none;
   }
 }
 
@@ -28,6 +41,7 @@
   flex-direction: column;
   align-items: end;
   gap: 4px;
+  z-index: 2;
 
   .title_one {
     font-size:4.5rem;
@@ -111,6 +125,7 @@
   text-align: center;
   max-width: 280px;
   align-self: center;
+  z-index: 2;
 
   @media only screen and (min-width: 800px) {
     font-size: 1.5rem;
@@ -133,6 +148,7 @@
   background: linear-gradient(to right, $dark-blue, $turquoise);
   align-self: center;
   border-radius: 8px;
+  z-index: 2;
 
   @media only screen and (min-width: 800px) {
     margin-top: 90px;

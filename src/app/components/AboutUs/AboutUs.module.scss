@@ -81,6 +81,10 @@
     gap: 100px;
     padding: 121px 80px 35px;
   }
+
+  @media only screen and (min-width: 1200px) {
+    padding: 121px 180px 35px 140px;
+  }
 }
 
 .circle_container {
@@ -89,12 +93,28 @@
   border-radius: 100px;
   background-color: white;
   margin: 0 auto;
+
+  @media only screen and (min-width: 900px) {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+  }
 }
 
 .info_container {
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media only screen and (min-width: 1200px) {
+    gap: 46px;
+  }
 }
 
 .title_wrapper {
@@ -136,6 +156,17 @@
       font-size: 2.5rem;
     }
   }
+
+  @media only screen and (min-width: 1200px) {
+
+    .name {
+      font-size: 3rem;
+    }
+
+    .title_one, .title_two {
+      font-size: 5rem;
+    }
+  }
 }
 
 .name_container {
@@ -161,6 +192,12 @@
       font-weight: $font-semibold;
     }
   }
+
+  @media only screen and (min-width: 900px) {
+    p {
+      font-size: 1.75rem;
+    }
+  } 
 }
 
 .description_container {
@@ -175,6 +212,16 @@
     color: $gray;
     line-height: 1;
   }
+
+  @media only screen and (min-width: 900px) {
+    text-align: left;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    p {
+      font-size: 1.75rem;
+    }
+  }
 }
 
 
@@ -186,5 +233,9 @@
   font-weight: $font-regular;
   color: $light-blue;
   line-height: 1;
+
+  @media only screen and (min-width: 900px) {
+    display: none;
+  }
 }
 

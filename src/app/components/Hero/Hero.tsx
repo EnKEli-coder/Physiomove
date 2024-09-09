@@ -5,6 +5,7 @@ import { anek_Devanagari } from "@/app/fonts";
 const Hero = () => {
   return (
       <section className={style.hero} id="hero-section">
+        <div className={style.image_container}></div>
         <div className={style.title_section}>
           <h1 className={`${style.title_one} ${anek_Devanagari.className}`}>TU SALUD</h1>
           <h2 className={`${style.title_two} ${anek_Devanagari.className}`}>ES NUESTRA PRIORIDAD</h2>
